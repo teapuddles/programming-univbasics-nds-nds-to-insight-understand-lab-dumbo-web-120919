@@ -1,8 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 require 'pp'
-# Call the method directors_database to retrieve the NDS
-require "pry"
+
 def pretty_print_nds(nds)
   nds = directors_database
 return pp nds
@@ -13,7 +12,6 @@ def print_first_directors_movie_titles
  i = 0
  while i < first[:movies].length do
    movie = first[:movies][i]
-   Pry.config.output = STDOUT
    puts movie[:title]
    i += 1 
  end
