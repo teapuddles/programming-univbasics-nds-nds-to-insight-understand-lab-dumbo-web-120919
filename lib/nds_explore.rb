@@ -10,4 +10,5 @@ end
 
 def print_first_directors_movie_titles
  first = directors_database[0]
+ while first[:movies]
 end
