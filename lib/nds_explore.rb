@@ -13,7 +13,7 @@ def print_first_directors_movie_titles
  i = 0
  while i < first[:movies].length do
    movie = first[:movies][i]
-   binding.pry
+   Pry.config.output = STDOUT
    puts movie[:title]
    i += 1 
  end
